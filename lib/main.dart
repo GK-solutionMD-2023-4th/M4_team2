@@ -1,8 +1,9 @@
 import 'package:cake/order.dart';
+import 'beanie.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp1());
 }
 
 class MyApp extends StatelessWidget {
