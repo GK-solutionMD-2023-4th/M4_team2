@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(MyApp());
-}
-
-class MyApp extends StatelessWidget {
+class Cake extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -43,7 +39,7 @@ class _OrderPageState extends State<OrderPage> {
     'Cake 6',
   ];
 
-  final List<int> menuPrices = [10, 20, 30, 40, 50, 1000];
+  final List<int> menuPrices = [4500, 5000, 5300, 6100, 6200, 7400];
 
   final List<String> sizeItems = [
     '1호',
@@ -51,7 +47,7 @@ class _OrderPageState extends State<OrderPage> {
     '5호',
   ];
 
-  final List<int> menuSize = [10, 20, 30];
+  final List<int> menuSize = [3000, 5000, 7000];
 
   final List<String> tasteItems = [
     '초코 필링',
@@ -59,7 +55,14 @@ class _OrderPageState extends State<OrderPage> {
     '스트로베리 필링',
   ];
 
-  final List<int> tasteSize = [10, 20, 30];
+  final List<int> tasteSize = [2000, 3500, 5500];
+
+  String formatCurrency(int value) {
+    return '${value.toString().replaceAllMapped(
+      RegExp(r'(\d{1,3})(?=(\d{3})+(?!\d))'),
+      (Match m) => "${m[1]},",
+    )}₩';
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -176,7 +179,13 @@ class _OrderPageState extends State<OrderPage> {
                         padding: EdgeInsets.only(top: 10),
                         child: Text(menuItems[index]),
                       ),
-                      Text("\$${menuPrices[index]}"),
+                      Text("+${formatCurrency(menuPrices[index])}", 
+                      style: TextStyle(
+                      fontSize: 10,
+                      fontWeight: FontWeight.normal,
+                      color: Color.fromARGB(255, 147, 147, 147),
+                    ),
+                    ),
                     ],
                   ),
                 );
@@ -251,7 +260,11 @@ class _OrderPageState extends State<OrderPage> {
                         padding: EdgeInsets.only(top: 10),
                         child: Text(sizeItems[index]),
                       ),
-                      Text("\$${menuSize[index]}"),
+                      Text("+${formatCurrency(menuSize[index])}",                      style: TextStyle(
+                      fontSize: 10,
+                      fontWeight: FontWeight.normal,
+                      color: Color.fromARGB(255, 147, 147, 147),
+                    ),),
                     ],
                   ),
                 );
@@ -326,7 +339,13 @@ class _OrderPageState extends State<OrderPage> {
                         padding: EdgeInsets.only(top: 10),
                         child: Text(tasteItems[index]),
                       ),
-                      Text("\$${tasteSize[index]}"),
+                      Text("+${formatCurrency(tasteSize[index])}",
+                    style: TextStyle(
+                      fontSize: 10,
+                      fontWeight: FontWeight.normal,
+                      color: Color.fromARGB(255, 147, 147, 147),
+                    ),
+                    ),
                     ],
                   ),
                 );
@@ -365,11 +384,12 @@ class _OrderPageState extends State<OrderPage> {
                     Padding(
                       padding: EdgeInsets.only(right: 20),
                       child: Text(
-                        "\$${price}",
+                        "+${formatCurrency(price)}",
                         style: TextStyle(
-                          fontSize: 13,
+                          fontSize: 12,
                           fontWeight: FontWeight.normal,
-                          color: Colors.black,
+                          color: Color.fromARGB(255, 109, 109, 109),
+
                         ),
                       ),
                     ),
@@ -405,11 +425,11 @@ class _OrderPageState extends State<OrderPage> {
                     Padding(
                       padding: EdgeInsets.only(right: 20),
                       child: Text(
-                        "\$${sizePrice}",
+                        "+${formatCurrency(sizePrice)}",
                         style: TextStyle(
-                          fontSize: 13,
+                          fontSize: 12,
                           fontWeight: FontWeight.normal,
-                          color: Colors.black,
+                          color: Color.fromARGB(255, 109, 109, 109),
                         ),
                       ),
                     ),
@@ -445,11 +465,11 @@ class _OrderPageState extends State<OrderPage> {
                     Padding(
                       padding: EdgeInsets.only(right: 20),
                       child: Text(
-                        "\$${tastePrice}",
+                        "+${formatCurrency(tastePrice)}",
                         style: TextStyle(
                           fontSize: 13,
                           fontWeight: FontWeight.normal,
-                          color: Colors.black,
+                          color: Color.fromARGB(255, 109, 109, 109),
                         ),
                       ),
                     ),
@@ -483,7 +503,7 @@ class _OrderPageState extends State<OrderPage> {
                     Padding(
                       padding: EdgeInsets.only(right: 20),
                       child: Text(
-                        "\$${(price + sizePrice + tastePrice).toStringAsFixed(2).replaceAllMapped(new RegExp(r'(\d{1,3})(?=(\d{3})+(?!\d))'), (Match m) => "${m[1]},")}",
+                        formatCurrency(price + sizePrice + tastePrice),
                         style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.normal,
