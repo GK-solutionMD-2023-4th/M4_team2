@@ -118,10 +118,10 @@ class _MyHomePageState extends State<MyHomePage> {
                 children: [
                   Container(
                     padding: const EdgeInsets.only(left: 16.0),
-                    child: Row(
+                    child: const Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        const SizedBox(
+                        SizedBox(
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: [
@@ -162,7 +162,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       ],
                     ),
                   ),
-                  SizedBox(height: 8),
+                  const SizedBox(height: 8),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -171,13 +171,13 @@ class _MyHomePageState extends State<MyHomePage> {
                         height: 71,
                         color: Colors.blue,
                       ),
-                      SizedBox(width: 8),
+                      const SizedBox(width: 8),
                       Container(
                         width: 100,
                         height: 71,
                         color: Colors.green,
                       ),
-                      SizedBox(width: 8),
+                      const SizedBox(width: 8),
                       Container(
                         width: 100,
                         height: 71,
@@ -185,9 +185,9 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                     ],
                   ),
-                  SizedBox(height: 8),
-                  Text(
-                    '텍스트',
+                  const SizedBox(height: 8),
+                  const Text(
+                    '설명글설명글설명글설명글설명글설명글설명글설명글설명글설명글설명글',
                     style: TextStyle(fontSize: 10),
                   ),
                 ],
@@ -218,10 +218,10 @@ class _MyHomePageState extends State<MyHomePage> {
                 children: [
                   Container(
                     padding: const EdgeInsets.only(left: 16.0),
-                    child: Row(
+                    child: const Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        const SizedBox(
+                        SizedBox(
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: [
@@ -262,7 +262,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       ],
                     ),
                   ),
-                  SizedBox(height: 8),
+                  const SizedBox(height: 8),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -271,13 +271,13 @@ class _MyHomePageState extends State<MyHomePage> {
                         height: 71,
                         color: Colors.blue,
                       ),
-                      SizedBox(width: 8),
+                      const SizedBox(width: 8),
                       Container(
                         width: 100,
                         height: 71,
                         color: Colors.green,
                       ),
-                      SizedBox(width: 8),
+                      const SizedBox(width: 8),
                       Container(
                         width: 100,
                         height: 71,
@@ -285,9 +285,9 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                     ],
                   ),
-                  SizedBox(height: 8),
-                  Text(
-                    '텍스트',
+                  const SizedBox(height: 8),
+                  const Text(
+                    '설명글설명글설명글설명글설명글설명글설명글설명글설명글설명글설명글',
                     style: TextStyle(fontSize: 10),
                   ),
                 ],
@@ -318,10 +318,10 @@ class _MyHomePageState extends State<MyHomePage> {
                 children: [
                   Container(
                     padding: const EdgeInsets.only(left: 16.0),
-                    child: Row(
+                    child: const Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        const SizedBox(
+                        SizedBox(
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: [
@@ -362,7 +362,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       ],
                     ),
                   ),
-                  SizedBox(height: 8),
+                  const SizedBox(height: 8),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -371,13 +371,13 @@ class _MyHomePageState extends State<MyHomePage> {
                         height: 71,
                         color: Colors.blue,
                       ),
-                      SizedBox(width: 8),
+                      const SizedBox(width: 8),
                       Container(
                         width: 100,
                         height: 71,
                         color: Colors.green,
                       ),
-                      SizedBox(width: 8),
+                      const SizedBox(width: 8),
                       Container(
                         width: 100,
                         height: 71,
@@ -385,9 +385,9 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                     ],
                   ),
-                  SizedBox(height: 8),
-                  Text(
-                    '텍스트',
+                  const SizedBox(height: 8),
+                  const Text(
+                    '설명글설명글설명글설명글설명글설명글설명글설명글설명글설명글설명글',
                     style: TextStyle(fontSize: 10),
                   ),
                 ],
