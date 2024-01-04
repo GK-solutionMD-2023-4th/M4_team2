@@ -30,3 +30,4 @@ flutter:
     - assets/images/caketwo.jpeg.webp
     - assets/images/cakethree.jpg
     - assets/images/cakeone.png
+    - assets/cake_information.json

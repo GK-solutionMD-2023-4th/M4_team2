@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
       // iPhone 15 Pro Max
       return 357.0;
     }
-    return 0.0;
+    return 200.0;
   }
 
   Widget buildContainer() {

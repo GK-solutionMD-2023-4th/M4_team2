@@ -1,0 +1,7 @@
+{"Cake_Menu" : ["Cake 1", "Cake 2", "Cake 3","Cake 4", "Cake 5", "Cake 6"], 
+"Cake_Menu_Price" : [4500, 5000, 5300, 6100, 6200, 7400],
+"Cake_Size" : ["1호", "3호", "5호"],
+"Cake_Size_Price" : [3000, 5000, 7000],
+"Taste" : ["초코 필링", "망고 필링", "스트로베리 필링"],
+"Taste_Price" : [2000, 3500, 5500]
+}
