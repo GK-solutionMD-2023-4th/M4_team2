@@ -76,6 +76,7 @@ class RoundedImage extends StatelessWidget {
   final String imageUrl;
   final double width;
   final double height;
+
   const RoundedImage
       (this.imageUrl, {Key? key, required this.width, required this.height}) :
         super(key: key);
